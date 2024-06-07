@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/login.css" />
+      </head>
+  <body>
+  <div class="col2">
+  <div class="bigform">
+    <div class="header">
+        <div class="logo">
+          <img src="../images/logo.svg" />
+        </div>
+        <div class="menu">
+            <div class="login">
+                Don't have an account? <a href="../pages/signup.html">Sign up</a>
+              </div>
+        </div>
+      </div>
+      <div class="sign">
+       <h1>Welcome Back</h1>
+       <p>Login into your account</p>
+      </div>
+      <div class="button-container">
+            <button class="button">Facebook</button>
+            <button class="bookmark">Google</button>
+      </div>
+      <div class="center">
+      <div class="continue">
+       <p>or continue with</p>
+      </div>
+    </div>
+    <form action="./home.html" method="Get" class="form1">
+      <div class="form">
+        <input
+          type="email"
+          id="pass"
+          name="email"
+          placeholder="Email Address"
+        />
+      </div>
+      <!-- Error message for email -->
+      <div class="email-error"></div>
+      <div class="form">
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          placeholder="Password"
+        />
+      </div>
+      <div class="password-error"></div> <!-- Error message for password -->
+      <div class="terms">
+        <label class="switch">
+          <input type="checkbox" id="ageVerification">
+          <span class="slider round"></span>
+        </label>
+        <div class="privacy">
+          Remember Me
+        </div>
+        <div class="recoverpass">
+          Recover Password
+        </div>
+      </div>
+      <div class="submit"><input type="submit" value="LOG IN" /></div>
+    </form>
+    
+</div>
+<div class="right-pic">
+<img src="../images/right-pic.jpg" />
+</div>
+</div>
+<script src="../script/script.js" ></script>
+</body>
+</html>

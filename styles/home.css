@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* background-color: #232628; */
+    background-color: #e0e0e0dd;
+    padding: 0;
+  }
+
+  .dark {
+    background-color: #232628;
+    color: #FFFFFF;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #000;
+    align-items: center;
+    padding: 0 50px;
+    /* position: relative; */
+    border: 0;
+  }
+  .dark .header{
+    background-color: #000000;
+  }
+  .search{
+    width: 30%;
+    padding: 10px;
+    height: 30px;
+    border-radius: 50px;
+  }
+  .dark .search{
+    border: 2px solid #ffffff;
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+    color: white;
+  }
+  
+  .sidebar-navigation {
+    display: block;
+    background-color: #198e76;
+    width: 250px;
+    height: 85%;
+    margin: 20px 10px 0 70px;
+    border-radius: 8px;
+  }
+  .profile-area{
+    margin: 20px 20px 0 20px;
+  }
+  .btn{
+    width: 100%;
+  }
+  .btn .button{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #198e76;
+    border: 0;
+    border-radius: 0 0 8px 8px;
+    height: 40px;
+    border-top: 4px solid #4bece1;
+  }
+  .btn .button a{
+    font-display: none;
+    color: aliceblue;
+    text-decoration-line: none;
+  }
+  
+  .profile-pic {
+    background-color: white; /* Placeholder for the profile picture */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #3a3f41;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    /* background-color: #232628; */
+    background-color: #e0e0e0dd;
+    padding: 20px;
+  }
+  .dark .main-content{
+    background-color: #232628
+  }
+  .post-creation{
+    display: block;
+  }
+  .post-creation .btn-emoji{
+    border: 0;
+    background-color: transparent;
+    width: 40px;
+    height: 20px;
+    transform: translate(0, -100%);
+    margin: 0;
+  }
+  .post-creation textarea {
+    /* background-color: #192734; */
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    height: 120px;
+  }
+  .dark .post-creation textarea{
+    background-color: #192734;
+  }
+  
+  .btn-publish {
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .posts-feed {
+    /* background-color: #192734; */
+    background-color: #e0e0e0dd;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .dark .posts-feed{
+    background-color: #232628;
+    color: #000000;
+  }
+  .post {
+    /* background-color: #192734; */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 85%;
+  }
+  .dark .post{
+    background-color: #192734;
+  }
+  .post-creator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #0000008c;
+    gap: 10px;
+  }
+  .dark .post-creator{
+    color: #f0f0f0da;
+  }
+  .post-creator strong{
+    color: #000000;
+    margin: 0;
+  }
+  .post-creator p{
+    display: flex;
+  }
+  .dark .post-creator strong{
+    color: white;
+  }
+  .post-profile-pic {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .dark .post-profile-pic{
+    background-color: #FFFFFFff;
+  }
+  
+  .post-content {
+    display: inline-block;
+    vertical-align: middle;
+    color: #0000008c;
+  }
+  .dark .post-content{
+    color: #f0f0f0f0;
+  }
+  
+  .post-content p {
+    color: #000000;
+    margin: 5px 0;
+  }
+  .dark .post-content p{
+    color: white;
+  }
+  .btn-send-tip {
+    background-color: #17a2b8;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ .post-content .likes{
+    float: right;
+  }
+  
+  .sidebar-suggestions {
+    /* background-color: #192734; */
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    margin: 10px 70px 0 10px;
+    height: 80%;
+    border-radius: 8px;
+  }
+  .dark .sidebar-suggestions{
+    background-color: #192734;
+  }
+  .suggestions h3 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .dark .suggestions h3{
+    color: white;
+  }
+  
+  .suggestion {
+    background-color: #22303c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    align-items: center;
+  }
+  
+  .suggestion-profile-pic {
+    background-color: white; /* Placeholder for the suggestion profile picture */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion-content {
+    flex: 1;
+  }
+  
+  .suggestion-content p {
+    color: #8899a6; /* Lighter text for job titles */
+    margin: 5px 0;
+  }
+
+  .profile-pic,
+.suggestion-profile-pic,
+.post-profile-pic {
+  background-image: url('../images/profile.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.bottom-nav{
+  display: none;
+}
+
+
+  /* You may want to add media queries for responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .sidebar-suggestions {
+      display: none;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1200;
+      background-color: #198e76; /* or any color you prefer */
+    }
+  
+    .bottom-nav a {
+      padding: 15px;
+      display: block;
+      text-align: center;
+      color: white; /* or color for non-active state */
+    }
+  
+    .bottom-nav a.active {
+      color: #4bece1; /* or color for active state */
+    }
+  
+    .sidebar-navigation {
+      display: none;
+      position: fixed; /* Fixed position */
+      top: 0; /* Start from top */
+      bottom: 70%;
+       margin: 0;
+      right: 65%;
+      height: 100%; /* Full height */
+      width: 250px; /* Sidebar width */
+      background-color: #198e76; /* Sidebar background color */
+      z-index: 1000; /* Above all other content */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+      transform: translateX(-100%); /* Hide off-screen */
+    }
+    
+    .sidebar-navigation.active {
+      display: block; /* Show the sidebar */
+      transform: translateX(0); /* Move onto the screen */
+    }
+    
+  }

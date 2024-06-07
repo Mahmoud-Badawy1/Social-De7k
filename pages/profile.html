@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+<link rel="stylesheet" href="../styles/profile.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header" id="header">
+        <h1>Friendy</h1>
+        <input type="text" id="search" class="search" placeholder="Search ...">
+        <button id="dark-mode">
+          Dark Mode
+        </button>
+      </div>
+  <div class="container">
+    <div class="sidebar-navigation">
+      <!-- Profile area -->
+      <div class="profile-area">
+        <div class="profile-pic"></div>
+        <!-- Navigation links -->
+        <nav class="nav-links">
+          <a href="./home.html">Home</a>
+          <a href="#">Notifications</a>
+          <a href="#">Messages</a>
+          <a href="#">Collection</a>
+          <a href="#">Subscription</a>
+          <a href="#">Profile</a>
+          <a href="./login.html">Login</a>
+          <a href="./signup.html">Register</a>
+        </nav>
+      </div>
+      <div class="btn">
+        <button class="button"><a href="./pages/login.html">LOGOUT</a></button>
+      </div>
+    </div>
+    <div class="about">
+        <img src="../images/cover.png" alt="cover" class="cover" />
+            <img src="../images/right-pic.jpg" alt="" class="about-pic"/>
+            <div class="icons">
+                <div class="icon1">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+            </div>
+            <div class="person-info"><h2 class="name">Mahmoud Badawy</h2><p>@mahmoud_badawy</p>
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+    <div class="col2">
+    <main class="main-content">
+      <!-- Post creation area -->
+      <div class="post-creation">
+        <textarea id="postTextarea" placeholder="What's happening?"></textarea>
+        <button class="btn-emoji">😊</button>
+        <button class="btn-publish">PUBLISH POST</button>
+      </div>
+      <!-- Posts feed -->
+      <div class="posts-feed">
+        <!-- Sample post -->
+        <div class="post">
+          <div class="post-creator"><div class="post-profile-pic">
+        </div><strong>Mahmoud Badawy</strong> <p>@mahmoud.badawy</p>
+          </div>
+          <div class="post-content">
+            <p>Hi there I am feeling very good by making the post as it is now 😊😉😁🎉🎉</p>
+           <div class="likes"> <button class="btn-send-tip">SEND TIP</button></div>
+          </div>
+        </div>
+        <div class="post">
+            <div class="post-creator"><div class="post-profile-pic">
+          </div><strong>Mahmoud Badawy</strong> <P>@mahmoud.badawy</P>
+            </div>
+            <div class="post-content">
+              <p>Hi there I am feeling very good by making the post as it is now 😊😉😁🎉🎉</p>
+             <div class="likes"> <button class="btn-send-tip">SEND TIP</button></div>
+            </div>
+          </div>
+        
+        <!-- More posts... -->
+      </div>
+    </main>
+    <div class="sidebar-suggestions">
+      <!-- Suggestions area -->
+      <div class="suggestions">
+        <h3>My media</h3>
+        <!-- Sample suggestion -->
+        <div class="suggestion">
+          <div class="suggestion-profile-pic"></div>
+          <div class="suggestion-content">
+            <strong>Mahmoud Badawy</strong>
+            <p>Founder and CEO</p>
+          </div>
+        </div>
+        <div class="suggestion">
+            <div class="suggestion-profile-pic"></div>
+            <div class="suggestion-content">
+              <strong>Mahmoud Badawy</strong>
+              <p>Founder and CEO</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-profile-pic"></div>
+            <div class="suggestion-content">
+              <strong>Mahmoud Badawy</strong>
+              <p>Founder and CEO</p>
+            </div>
+          </div>
+        <!-- More suggestions... -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="bottom-nav">
+    <a href="home.html" id="home-icon"><i class="fas fa-home"></i></a>
+    <a href="profile.html" id="profile-icon"><i class="fas fa-user"></i></a>
+    <a id="menu-icon"><i class="fas fa-bars"></i></a>
+  </nav>
+  
+  <script src="../script/script.js"></script>
+</body>
+</html>
